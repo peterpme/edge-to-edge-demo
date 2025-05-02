@@ -4,14 +4,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context'
 
-function NavLayout({ children }) {
-  const insets = useSafeAreaInsets();
-  return <View style={{ flex: 1, paddingTop: insets.top }}>{children}</View>;
-}
-
 function HomeScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'yellow' }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Home Screen</Text>
     </View>
   );
@@ -27,6 +22,11 @@ const NativeStack = createNativeStackNavigator({
     }
   }
 })
+
+function NavLayout({ children }) {
+  const insets = useSafeAreaInsets();
+  return <View style={{ flex: 1, paddingTop: insets.top }}>{children}</View>;
+}
 
 const Tabs = createBottomTabNavigator({
   layout: NavLayout,
