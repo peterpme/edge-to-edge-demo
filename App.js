@@ -7,7 +7,7 @@ import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-cont
 function HomeScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Edge to Edge Enabled. New Arch Disabled</Text>
+      <Text>Edge to Edge DISABLED. New Arch Disabled</Text>
     </View>
   );
 }

@@ -25,9 +25,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "react-native-edge-to-edge"
-    ]
+    }
   }
 }
