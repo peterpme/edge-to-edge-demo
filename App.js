@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { createStaticNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -19,7 +19,7 @@ function HomeScreen() {
 
 const NativeStack = createNativeStackNavigator({
   screens: {
-    Home: {
+    NativeStackHome: {
       screen: HomeScreen,
       options: {
         title: "NativeStack",
@@ -30,8 +30,9 @@ const NativeStack = createNativeStackNavigator({
 
 const Tabs = createBottomTabNavigator({
   layout: NavLayout,
+  screenOptions: { headerShown: false },
   screens: {
-    Home: {
+    TabHome: {
       screen: NativeStack,
       options: {
         title: "Tabs",
