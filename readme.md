@@ -13,3 +13,8 @@
     alt="enabled"
     width="330" />
 </p>
+
+  <img
+    src="./enabled-with-hidden-bottom.png"
+    alt="enabled"
+    width="330" />

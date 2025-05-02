@@ -42,6 +42,7 @@ const Tabs = createBottomTabNavigator({
 })
 
 const RootStack = createNativeStackNavigator({
+  screenOptions: { headerShown: false },
   screens: {
     BottomTabs: Tabs,
   },
